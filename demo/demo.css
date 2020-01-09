@@ -1,0 +1,17 @@
+body {
+  padding: 40px;
+}
+
+.menuIcon {
+  height: 16px;
+  vertical-align: bottom;
+}
+
+.navigation[aria-hidden="true"] {
+  display: none;
+}
+
+.item {
+  display: inline-block;
+  padding: 10px;
+}

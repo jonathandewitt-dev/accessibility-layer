@@ -1,0 +1,51 @@
+{
+  "name": "accessibility-layer",
+  "version": "0.1.7",
+  "description": "A tool that provides accessibility features as a separate layer from the main application markup and scripts.",
+  "main": "src/index.js",
+  "module": "esm/addAccessibilityRules.min.mjs",
+  "scripts": {
+    "start": "node demoServer.js",
+    "build": "rollup --config",
+    "test": "jest",
+    "docker": "docker run --rm -it -v $(pwd):/accessibility-layer accessibility-layer_demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathandewitt-dev/accessibility-layer.git"
+  },
+  "keywords": [
+    "accessible",
+    "accessibility",
+    "make menu accessible",
+    "accessible menu",
+    "accessibility tools",
+    "accessibility library",
+    "css for accessibility",
+    "accessibility css",
+    "aria",
+    "wai"
+  ],
+  "author": "Jonathan DeWitt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathandewitt-dev/accessibility-layer/issues"
+  },
+  "homepage": "https://github.com/jonathandewitt-dev/accessibility-layer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "mutation-observer": "^1.0.3",
+    "rollup": "^1.27.3",
+    "rollup-jest": "0.0.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-terser": "^5.1.3"
+  },
+  "dependencies": {
+    "specificity": "^0.4.1"
+  }
+}
