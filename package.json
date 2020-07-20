@@ -1,6 +1,6 @@
 {
   "name": "@thundersolutions/access",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A tool that provides accessibility features as a separate layer from the main application markup and scripts.",
   "main": "src/index.js",
   "module": "esm/addAccessibilityRules.min.mjs",
