@@ -1,5 +1,5 @@
 {
-  "name": "accessibility-layer",
+  "name": "@thundersolutions/access",
   "version": "0.1.8",
   "description": "A tool that provides accessibility features as a separate layer from the main application markup and scripts.",
   "main": "src/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathandewitt-dev/accessibility-layer.git"
+    "url": "git+https://github.com/Thunder-Solutions/Thunder-Access"
   },
   "keywords": [
     "accessible",
@@ -28,9 +28,9 @@
   "author": "Jonathan DeWitt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonathandewitt-dev/accessibility-layer/issues"
+    "url": "https://github.com/Thunder-Solutions/Thunder-Access/issues"
   },
-  "homepage": "https://github.com/jonathandewitt-dev/accessibility-layer#readme",
+  "homepage": "https://github.com/Thunder-Solutions/Thunder-Access#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
