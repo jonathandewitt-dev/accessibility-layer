@@ -66,6 +66,9 @@ export default element => {
 
   // initialize the mutation observer
   observerUtils.setAttrChangeCallback(element)
+  const MutationObserver = typeof MutationObserver !== 'undefined'
+    ? MutationObserver
+    : class { observe() {} }
   const observer = new MutationObserver(observerUtils.attrChangeCallback)
   observer.observe(element, { attributes: true })
 

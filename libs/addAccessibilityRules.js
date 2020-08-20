@@ -64,6 +64,9 @@ export default config => {
   ruleUtilities.setApplyRulesCallback(config)
 
   // attach main function as a mutation observer to the root element
+  const MutationObserver = typeof MutationObserver !== 'undefined'
+    ? MutationObserver
+    : class { observe() {} }
   ruleUtilities.observer = new MutationObserver(ruleUtilities.applyRulesCallback)
   ruleUtilities.observer.observe(getRoot(), {
     childList: true,
