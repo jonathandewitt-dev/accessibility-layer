@@ -28,7 +28,7 @@ const focus = option => {
       tabbableElements[prevIndex].focus()
       break
     case 'off':
-      event.currentTarget.blur()
+      document.activeElement.blur()
       break
   }
   if (['next', 'previous', 'off'].includes(option)) return

@@ -18,6 +18,7 @@ addAccessibilityRules({
     },
     focusNext: utils => utils.focus('next'),
     focusPrev: utils => utils.focus('previous'),
+    focusOff: utils => utils.focus('off'),
     focusMenuBtn: utils => utils.focus('.menuBtn'),
   },
   
@@ -39,6 +40,7 @@ addAccessibilityRules({
       keyboard: {
         Enter: ['toggleMenu', 'focusNext'],
         ArrowDown: ['toggleMenu', 'focusNext'],
+        Escape: ['focusOff'],
       },
       mouse: {
         click: ['toggleMenu'],
